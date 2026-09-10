@@ -29,12 +29,12 @@
     <form action="" method="post">
 
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
 
         <br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
 
         <br><br>
 
@@ -49,6 +49,21 @@
 
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
+
+        <br><br>
+
+        <p>How do you like my website?</p>
+
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+
+        <input type="radio" id="bad" name="rating" value="bad">
+        <label for="bad">Bad</label>
+
+        <br><br>
+
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">I would like to see more content</label>
 
         <br><br>
 
