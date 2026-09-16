@@ -1,34 +1,81 @@
+/* Palette */
+
+:root {
+    --dark: #8a1458;
+    --light: #f3a6d0;
+    --background: #160b14;
+    --accent: #ff69b4;
+    --warning: #ff3366;
+    --text: #f2d9e6;
+    --line: #6b3b58;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
-    color: #f2d9e6;
-    background-color: #160b14;
+    color: var(--text);
     line-height: 1.6;
 }
 
 h1 {
-    color: #ff69b4;
+    color: var(--accent);
 }
 
 h2 {
-    color: #ff4fa3;
+    color: var(--light);
 }
 
 .intro {
-    color: #ff9dcc;
+    color: var(--accent);
 }
 
 .warning {
-    color: #ff3366;
+    color: var(--warning);
 }
 
 #parks {
-    color: #ff85c8;
+    color: var(--accent);
+}
+
+header {
+    background-color: var(--dark);
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+footer {
+    background-color: var(--light);
+    color: var(--background);
+}
+
+blockquote {
+    background-color: rgba(138, 20, 88, 0.08);
+}
+
+main {
+    background-color: var(--background);
+}
+
+
+
+h1 {
+    color: var(--warning);
 }
 
 h1 {
-    color: #ff1493;
+    color: var(--accent);
 }
 
-h1 {
-    color: #ff69b4;
+/* Background photo */
+
+body {
+    background-image: url("images/nightcity.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
