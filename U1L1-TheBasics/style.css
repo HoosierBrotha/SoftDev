@@ -110,38 +110,38 @@ header, main, footer {
     padding: 1.5rem 2rem;
 }
 
-/* --- LIST RULES --- */
+
 nav ul {
     margin: 0;
     padding: 0;
-    list-style-type: none; /* Removes bullets from nav */
+    list-style-type: none; 
 }
 
 nav li {
     padding: 0.5rem 0;
 }
 
-/* Nav icon spacing */
+
 nav span {
     margin-right: 8px;
 }
 
-/* Ordered list (Turkey Run page or default) */
+
 ol {
     list-style-type: decimal-leading-zero;
 }
 
-/* Unordered lists everywhere else */
+
 ul {
     list-style-type: square;
 }
 
-/* Contents box */
+
 .contents-box ul, .contents ul {
     list-style-position: inside;
 }
 
-/* Description List (Glossary style) */
+
 dt {
     font-family: "Space Grotesk", sans-serif;
     font-weight: bold;
@@ -193,6 +193,47 @@ iframe {
     color: var(--background);
     padding: 1rem;
     border-radius: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid var(--line);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--light);
+    color: var(--background);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(243, 166, 208, 0.06); /* Fainter zebra stripe tint */
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 105, 180, 0.2); /* Warm accent highlight on hover */
+}
+
+caption {
+    caption-side: top;
+    padding-bottom: 0.5rem;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+
+#random {
+    display: none;
 }
 
 a:focus, 
