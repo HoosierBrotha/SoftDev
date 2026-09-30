@@ -110,13 +110,71 @@ header, main, footer {
     padding: 1.5rem 2rem;
 }
 
+/* --- LIST RULES --- */
 nav ul {
     margin: 0;
     padding: 0;
+    list-style-type: none; /* Removes bullets from nav */
 }
 
 nav li {
     padding: 0.5rem 0;
+}
+
+/* Nav icon spacing */
+nav span {
+    margin-right: 8px;
+}
+
+/* Ordered list (Turkey Run page or default) */
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+/* Unordered lists everywhere else */
+ul {
+    list-style-type: square;
+}
+
+/* Contents box */
+.contents-box ul, .contents ul {
+    list-style-position: inside;
+}
+
+/* Description List (Glossary style) */
+dt {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* --- LINK RULES (Exact Order) --- */
+a:link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--light);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--warning);
+}
+
+/* Header Links Hover Override */
+header a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 img {
